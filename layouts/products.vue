@@ -1,22 +1,22 @@
 <template>
     <div>
-        <header>
-            
+        <header class="shadow-sm bg-white">
+            <nav class="container mx-auto p-4 flex justify-between">
+                <nuxt-link to="/" class="font-bold">Akram Nuxt</nuxt-link>
+                
+            </nav>
         </header>
 
         <!-- output the page content -->
-        <div>
+        <div class="container mx-auto p-4">
             <slot />
         </div>
-        <footer>
-            <nav>
-                <nuxt-link to="/">Akram Nuxt</nuxt-link>
-                <ul>
+        <footer class="container mx-auto p-4 flex justify-between border-t-2">
+            <ul class="flex gap-4">
                     <li><NuxtLink to="/">Home</NuxtLink></li>
                     <li><NuxtLink to="/about">About</NuxtLink></li>
                     <li><NuxtLink to="/products">Products</NuxtLink></li>
                 </ul>
-            </nav>
         </footer>
     </div>
   </template>

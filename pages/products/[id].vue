@@ -1,5 +1,9 @@
 <template>
     <div>
+        <Head>
+            <Title>Akram Nuxt | {{ product.title }}</Title>
+            <Meta name="description" :content="product.description" />
+        </Head>
         <product-details :product="product"></product-details>
     </div>
 </template>
